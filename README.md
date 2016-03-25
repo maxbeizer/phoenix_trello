@@ -1,5 +1,8 @@
 # PhoenixTrello
 
+From the [blog by
+codeloveandboards.com](http://codeloveandboards.com/blog/2016/01/04/trello-tribute-with-phoenix-and-react-pt-1/)
+
 To start your Phoenix app:
 
   1. Install dependencies with `mix deps.get`
