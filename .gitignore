@@ -21,3 +21,5 @@ erl_crash.dump
 /priv/static/js/application.js
 
 *.log
+
+/build
