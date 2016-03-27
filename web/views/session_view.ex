@@ -1,4 +1,4 @@
-defmodule PhoenixTrell.SessionView do
+defmodule PhoenixTrello.SessionView do
   use PhoenixTrello.Web, :view
 
   def render("show.json", %{jwt: jwt, user: user}) do
