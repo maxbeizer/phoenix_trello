@@ -1,7 +1,7 @@
 import React            from 'react';
 import { connect }      from 'react-redux';
 import Actions          from '../actions/sessions';
-import { routeActions } from 'redux-simple-router';
+import { push }         from 'react-router-redux';
 import Header           from '../layouts/header';
 
 class AuthenticatedContainer extends React.Component {
@@ -12,7 +12,7 @@ class AuthenticatedContainer extends React.Component {
     if (phoenixAuthToken && !currentUser) {
       dispatch(Actions.currentUser());
     } else if (!phoenixAuthToken) {
-      dispatch(routeActions.push('/sign_in'));
+      dispatch(push('/sign_in'));
     }
   }
 

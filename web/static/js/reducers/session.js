@@ -3,8 +3,8 @@ import Constants from '../constants';
 const initialState = {
   currentUser: null,
   error: null,
-  channel: channel,
-  error: error,
+  channel: null,
+  error: null,
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -20,7 +20,7 @@ export default function reducer(state = initialState, action = {}) {
 
     case Constants.SOCKET_CONNECTED:
       return { ...state, error: action.error };
-      
+
     default:
       return state;
   }
