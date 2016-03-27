@@ -11,7 +11,7 @@ function web(dest) { return join('web/static/' + dest); }
 var config = module.exports = {
   entry: {
     application: [
-      web('css/application.scss'),
+      web('css/application.sass'),
       web('js/application.js'),
     ],
   },
